@@ -1,0 +1,65 @@
+When writing CSS rule inside the HTML file, you need to enclose it inside a <style> tag, so the browser knows you are writing CSS. If you write your CSS inside a separate CSS file, you don't need the <style> tag, you can just write your CSS rule immediately.
+
+<style>
+p {
+  color: red;
+}
+</style>
+
+If you have a separate CSS file, called "custom.css", you need to link your CSS file to your HTML file in the <head> tag like this.
+
+<link rel="stylesheet" type="text/css" href="custom.css"/>
+
+The other way of writing CSS is directly on the HTML element you are targeting. This is called in-line CSS. You use the style attribute when you want to write in-line CSS.
+
+<p style="color:red;">a red paragraph</p>
+-----------------------------------------------------------------------------------------------------
+To customize just one element, say a particular paragraph, you can use an ID selector. ID is an attribute that you can add to element tags. On a given HTML page, you are only allowed one element per ID. You should reserve using ID only for important elements. To use ID as selectors, simply place a hashtag # sign at the beginning of the ID attribute value.
+
+HTML: 
+<p id="special-paragraph"></p>
+
+CSS: 
+#special-paragraph {
+  color: green;
+  font-size: 20px;
+}
+
+if you want to apply styles to a small group of paragraphs, maybe those are useful notes that you want to stand out for a holiday trip you are writing about. Class selector would be what you are looking for. Class is an attribute that you can add to multiple HTML tags, and your CSS styles will apply to all elements with the same Class attribute value. To use Class as a selector, add a period . to the beginning of the Class attribute value.
+
+HTML:
+<p class="useful-notes">...</p>
+<p class="useful-notes">...</p>
+<p class="useful-notes">...</p>
+
+CSS:
+.useful-notes {
+  color: blue;
+  font-weight: 400;
+}
+
+You can define the same style for multiple selectors by using a comma , to join them.
+
+CSS:
+p, h1, h2 {
+  font-family: Serif;
+}
+------------------------------------------------------------------------------------------------------
+Properties and Values
+The things we put between the curly brackets {} are called Properties. They are what we use to define the styles of the selector. There is a large number of properties, below are some of the common ones we use for text elements. We will look into each category of properties in later chapters.
+
+p {
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: sans-serif;
+  line-height: 3;
+}
+
+One thing to mention is that some properties have a shorthand rule. Which means you can use one property and multiple values to set the styles for multiple properties. For the font, it is simply font. It allows you to define all the font properties in one line.
+
+p {
+  /* style | variant | weight | size/line-height | family */
+  font: italic small-caps 400 14px/3 sans-serif;
+}
