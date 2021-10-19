@@ -1,0 +1,55 @@
+<!--Always indent when you are creating a child element. A child element is an element nested in a surrounding parent element. Make sure you are indenting correctly. VS Code should auto-indent for you when you create new elements. Keeping the indentation right helps you make out the structure of your HTML much faster.
+
+Bad-->
+<section> <!-- Parent to article -->
+  <article> <!-- Parent to paragraphs -->
+    <p>some paragraph</p>
+      <p>some paragraph</p>
+    </article>
+  </section>
+<!--Good-->
+<section> <!-- Parent to article -->
+  <article> <!-- Parent to paragraphs -->
+    <p>some paragraph</p>
+    <p>some paragraph</p>
+  </article>
+</section>
+<!--Close all element tags
+Make sure that you are closing all your element tags, missing some closing tags may result in render errors.
+
+Bad-->
+<section>
+  <p>some paragraph
+  <p>some paragraph
+</section>
+<!--Good-->
+<section>
+  <p>some paragraph</p>
+  <p>some paragraph</p>
+</section>
+<!--Close self-closing elements and empty elements.
+
+Allowed-->
+<meta title="Best Page">
+<!--Preferred-->
+<meta title="Best Page" />
+<!--Believe it or not, both uppercase and lower case elements will work. But we are going to keep the element names as lowercase.
+Keeping to our lower case preference, make sure you attribute names and values are also in lowercase too.If you want your attribute to contain multiple values separated by spaces, you must use a quotation marks. Our preference is to use a double quotation mark in HTML (").
+
+Bad-->
+<A HREF="/">Home</A>
+<p CLASS="BIOGRAPHY">some paragraph</p>
+<p class=biography dark></p>
+<p class=biography></p>
+<!--Good-->
+<p class="biography">some paragraph</p>
+<p class="biography">some paragraph</p>
+
+<p class="biography">
+  <p class="biography dark">
+<!--In HTML, we prefer not to have spaces before and after (=) equal signs. Not having spaces makes it more compact and easier to read.
+
+Bad-->
+<p class = "biography"></p>
+<!--Good-->
+<p class="biography"></p>

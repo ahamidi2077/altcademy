@@ -1,0 +1,62 @@
+<!-- Header
+Let's start at the top. You can use the <header> element to contain content that represents a group of introductory or navigational aids. It may contain some heading elements (h1, h2...) but also other elements like a logo, a search form, and so on.
+
+<header> looks very similar to <head> but they have completely different uses. The <head> element is for providing general information (metadata) about the document, including its title and links to its scripts and style sheets. It is used and processed by the browser and not rendered on the page. It falls in the <html>element.
+
+<header> element is a structural element that contains the heading elements of a page, it's a block element and it falls in the <body> element.-->
+    <header>
+        <h1>Company Name</h1>
+      </header>
+<!-- Navigation
+The <nav> element represents a section that links to other pages or to parts within the page, it's a section with navigation links. <nav> should only be used for primary navigation sections such as in the header, at the footer of the page, or for a table of contents. One-off navigation links should not use <nav> such as links in a paragraph that direct to other parts of the website or external websites.-->
+    <nav>
+        <!-- links -->
+      </nav>
+<!-- Articles
+The <article> element represents a self-contained content in a page, which is intended to be independently distributable or reusable. It should make complete sense when you take it out and place it anywhere. Examples include a forum post, a magazine or newspaper article, or a blog entry.-->
+    <article>
+        <p>paragraphs about something</p>
+        <p>paragraphs about something</p>
+      </article>
+<!-- Sections
+The <section> element represents a generic section of a document, i.e., a thematic grouping of content, typically with a heading. It would be best if the contents in a section are related.-->
+    <section>
+        <h1>Section Title</h1>
+        <article>
+        </article>
+        <article>
+        </article>
+      </section>
+<!--When choosing between <section>, <article> and <div>. Think about the content that you are working on. If you are grouping the content only for styling purposes, use a <div>. If your content is independent and adds to the page outline, use a <article>. If you are grouping related content together and adds to the page outline, use a <section>.-->
+
+<!-- Aside
+Often you would see a vertical column of content on one side of a web page. This can be represented using the <aside> element. The <aside> element represents a section of a document with content connected tangentially to the main content of the document. <aside> is a block element like all the other structural elements. Which means it will take up the full width of the page or the element it is nested in. For now, don't worry so much about this as we will look at how to manually position elements with CSS in later chapters.-->
+    <aside>
+        ...
+      </aside>
+<!--Footer
+The <footer> element represents a footer for its nearest sectioning content or sectioning root element. A footer typically contains information about the author of the section, copyright data, or links to related documents. It can also be a site-wide footer that has additional navigation links.-->
+    <footer>
+        ...
+        </footer>
+<!--The entire structure of a page using the above elements can look like this.-->
+<body>
+    <header>
+      <h1>Company Name</h1>
+      <nav>...</nav>
+    </header>
+    <aside>
+      ...
+    </aside>
+    <section>
+      <article>
+        <!-- your main content -->
+      </article>
+      <article>
+        <!-- your main content -->
+      </article>
+    </section>
+    <footer>
+      ...
+    </footer>
+  </body>
